@@ -1,0 +1,15 @@
+{% extends "base" %}
+{% block content%}
+
+<!-- Card BEGIN -->
+<div class="card" style="flex: 1;">
+
+    <!-- Card title -->
+    <h2 class="card-title"><a>Error {{ title }}</a></h4>
+
+    <!-- Error Info -->
+    <p>{{ message }}</p>
+
+</div>
+<!-- Card END -->
+{% endblock content %}

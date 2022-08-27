@@ -1,0 +1,33 @@
+{% extends "base" %}
+
+{% block content %}
+
+<!-- Auto generator BEGIN -->
+{% for e in events %}
+
+<!-- Card BEGIN -->
+<div class="card p-0">
+    <!-- Card image BEGIN -->
+    <img src="https://images.unsplash.com/photo-1588392382834-a891154bca4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format"
+        class="img-fluid rounded-top w-200" alt="event-image">
+     <!-- Card image END -->
+
+    <!-- Card content BEGIN -->
+    <div class="content">
+
+        <!-- Card title BEGIN -->
+        <h2 class="content-title">
+            {{ e }}
+        </h2>
+        <!-- Card title END -->
+
+    </div>
+    <!-- Card content END -->
+
+</div>
+<!-- Card END -->
+
+{% endfor %}
+<!-- Auto generator END -->
+
+{% endblock content %}
